@@ -1,0 +1,61 @@
+
+html, * {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.ust-bolum {
+    background-color: #006400;
+    color: white;
+    padding: 10px;
+}
+.orta-kisimlar {
+    height: calc(100% - 80px); /* Üst ve alt bölümlerin yüksekliğini çıkarıyoruz */
+    /*  overflow: hidden;Float'ları temizlemek için */
+    /*owerflow yüksekliği sınırladığımız zaman alt kısmı göremeyiz*/
+}
+.orta-sol-kisim {
+    background-color: #32CD32;
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.orta-orta-kisim {
+    background-color: #90EE90;
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.orta-sag-kisim {
+    background-color: #98FB98;
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.alt-bolum {
+    background-color: #006400;
+    color: white;
+    padding: 10px;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .orta-sol-kisim, .orta-orta-kisim, .orta-sag-kisim {
+        width: 100%;
+        clear: both; /* Float'ları temizlemek için */
+
+    }
+}

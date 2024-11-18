@@ -1,0 +1,72 @@
+#kapsayici{
+    width:95%;
+    max-width: 1180px;
+    min-height: 500px;
+    margin: 0 auto;/*kapsayıcıyı ortalama*/
+    display: grid;
+    grid-gap:1%;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 5% 70% 5%;
+/*herbirine farklı isim vermen gerek rakam değil*/
+    grid-template-areas:
+            "baslik_bolumu baslik_bolumu baslik_bolumu"
+            "menu_bolumu menu_bolumu menu_bolumu"
+            "sol_bolum icerik_bolumu sag_bolum"
+            "sol_bolum  alt_bolum alt_bolum"
+    ;
+}
+
+.baslik{
+    background-color: #0AA3A4;
+    grid-area: baslik_bolumu;
+}
+
+.menu{
+    background-color: #2BCE8C;
+    grid-area: menu_bolumu;
+}
+
+.sol{
+    background-color: #0AAAFD;
+    grid-area: sol_bolum;
+}
+
+.icerik{
+    background-color: blueviolet;
+    grid-area: icerik_bolumu;
+}
+
+.sag{
+    background-color: orangered;
+    grid-area: sag_bolum;
+}
+
+.alt_bolum{
+    background-color: #0a68b1;
+    grid-area: alt_bolum;
+}
+
+@media screen and (max-width: 800px) {
+    #kapsayici{
+        grid-row-gap:1%;
+        grid-template-columns: auto;
+        grid-template-rows:200px auto;
+
+        grid-template-areas:
+            "sag_bolum"
+            "baslik_bolumu"/*gizlemek için alttaki .baslik da aktif olmalı*/
+            "menu_bolumu"
+            "sol_bolum"
+            "icerik_bolumu"
+            "alt_bolum"
+        ;
+    }
+
+    /*
+    .baslik{
+        display: none;
+    }
+    */
+
+
+}

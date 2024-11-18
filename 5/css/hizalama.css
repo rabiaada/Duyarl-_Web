@@ -1,0 +1,54 @@
+#kapsayici{
+    padding: 10px;
+    background-color: #000000;
+    height: 500px;
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+
+    justify-content: center;
+    align-content: end;
+}
+
+#kapsayici div{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cell_1{
+    background-color: orangered;
+}
+
+.cell_2{
+    background-color: blueviolet;
+}
+
+.cell_3{
+    background-color: indigo;
+}
+
+.cell_4{
+    background-color: #0AAAFD;
+}
+
+.cell_5{
+    background-color: yellow;
+}
+
+.cell_6{
+    background-color: #0AA3A4;
+}
+
+.cell_7{
+    background-color: grey;
+}
+
+.cell_8{
+    background-color: #0ec300;
+}
+
+.cell_9{
+    background-color: #ff0afa;
+}

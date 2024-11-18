@@ -1,0 +1,38 @@
+#menu {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  
+}
+#menu li {
+    margin-right: 2px;
+    float: left;
+}
+
+#menu li {
+    float: left; 
+    background-color: #f0e3e3;
+    padding:10px; 
+    margin: 5px; 
+    border: 1px solid #24a65c; 
+    border-radius: 5px;
+    text-align: center; 
+    width: auto; 
+}
+
+
+#menu li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    #menu li {
+        background-color: pink; 
+        clear: both;
+        margin-bottom: 2px;
+       
+    }
+}

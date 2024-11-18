@@ -1,0 +1,40 @@
+#kapsayici{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: gray;
+    height: 200px;    
+    font-size: 30px;
+
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: center; /*flex-start|flex-end|center|space-between|space-around|space-evenly*/
+    align-items: center ; /*flex-start|flex-end|center|stretch*/
+}
+
+.kutu{
+    flex-basis: 100px;
+}
+
+#bir{
+    background: blueviolet;
+
+}
+
+#iki{
+    background: aquamarine;
+    order: 2;
+}
+
+#uc{
+    background: bisque;
+    order: 1;
+}
+
+#dort{
+    background: cadetblue;
+
+}

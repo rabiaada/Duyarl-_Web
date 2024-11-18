@@ -1,0 +1,61 @@
+#kapsayici{
+    width: 95%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: indigo;
+    height: 100px;
+    color: white;
+}
+
+main{
+    display: flex;
+    height: 500px;
+
+}
+
+#sol{
+    background-color: aquamarine;
+    /*flex-basis: 20%;*/
+    flex: 20%;
+}
+
+#icerik{
+    background-color: bisque;
+    /*flex-basis: 60%;*/
+    flex: 60%;
+}
+
+#sag{
+    background-color: aquamarine;
+    /*flex-basis: 20%;*/
+    flex: 20%;
+}
+
+footer{
+    background-color: indigo;
+    height: 100px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        flex-direction: column;/*sayesinde menü öğeleri alt alta dizilir*/
+    }
+
+    #sol{
+        display: none;
+    }
+
+    #sag{
+        flex: 50%;
+        order:-1;
+    }
+
+    #icerik{
+        flex: 50%;
+    }
+
+}

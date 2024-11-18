@@ -1,0 +1,21 @@
+#ust_menu{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#ust_menu a {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #ust_menu{
+        flex-direction: column; /*sayesinde menü öğeleri alt alta dizilir*/
+    }
+    
+    #ust_menu a:last-child{
+        order: -1; /*order: -1 özelliği, flexbox düzeninde bu öğeyi diğer öğelerden önce konumlandırır*/
+    }
+}
